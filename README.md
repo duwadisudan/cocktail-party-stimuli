@@ -77,40 +77,12 @@ conda activate myenv
 Key dependencies: `psychopy`, `pyserial`, `pandas`, `numpy`, `sounddevice`,
 `soundfile`, `scipy`, `matplotlib`.
 
-## Adapting for another machine
 
-Each main script defines its directory paths in the class `__init__` block,
-e.g.
-
-```python
-self.csv_path             = r"C:\Sudan\Stimuli\initialization_data\..."
-self.spatial_video_folder = r"C:\Sudan\Stimuli\sudan_spatial_videos_updated"
-self.response_csv_path    = r"C:\Sudan\Stimuli\initialization_data\..."
-```
-
-These paths reflect the layout on the original acquisition machine. To run
-on another system, edit them in one place per script. The serial port
-(`COM3`) and screen indices (`0`, `1`, `2`) are likewise defined inline and
-should match the local hardware. The expected on-disk layout is:
-
-```
-<stimuli_root>/
-├── sudan_spatial_videos_updated/    # spatialized AVI clips, *_30.avi / *_-30.avi
-├── Screenshots_faces_full_updated/  # speaker still images, *.jpg
-├── Transcripts/                     # English transcript CSV
-└── initialization_data/             # CSV outputs are written here
-```
-
-## Stimulus materials
-
-The video, audio, screenshot, and transcript files referenced by the scripts
-are not redistributed in this repository. See the manuscript and its data
-availability statement for how the stimulus set is shared.
 
 ## Authorship and AI use
 
 The author wrote, developed, and validated all experiment logic. AI tools
-(general-purpose code assistants) were used to help refactor, comment, and
+(chatGPT, codex, and Claude) were used to help refactor, comment, and
 document the scripts. The author retains full scientific responsibility for
 the correctness of the code and the validity of any analyses produced with
 it. Each script's docstring carries the same statement.
