@@ -1,0 +1,17 @@
+name: cocktail-party
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pip:
+      - psychopy
+      - pyserial
+      - pygame
+      - sounddevice
+      - soundfile

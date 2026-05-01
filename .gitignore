@@ -1,0 +1,35 @@
+# Private notes and AI-assistant configuration — never publish
+CLAUDE.md
+.claude/
+.cursor/
+.cursorrules
+
+# Environment / virtualenv
+.venv/
+venv/
+env/
+
+# Python build / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Session output: generated CSVs are participant data, not source
+response_*.csv
+iniList_*.csv
+trigger_onsets_*.csv
+trigger_timings_*.csv
+eye_no_sound.csv
+
+# Local one-shot helpers
+_cleanup_slop.py
