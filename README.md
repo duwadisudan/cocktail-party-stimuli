@@ -26,7 +26,7 @@ LICENSE
 |---|---|
 | `experiment_scripts/AV_only_save_onsets.py` | Audio-visual block: target/masker pairs of spatialized speech videos. |
 | `experiment_scripts/AV_control_save_onsets.py` | Audio-visual block with an extended jittered pre-stimulus crosshair hold (15-17 s). |
-| `experiment_scripts/Audio_only_save_onsets.py` | Audio-only block: videos rendered at 1x1 px so only audio reaches the participant. |
+| `experiment_scripts/Audio_only_save_onsets.py` | Audio-only block |
 | `experiment_scripts/Control_only_save_onsets.py` | Eye-movement control block. |
 | `experiment_scripts/Resting_only_trigger.py` | Resting-state block with periodic triggers. |
 
